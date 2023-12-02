@@ -40,10 +40,12 @@ app.use('*', function (req, res) {
 })
 
 const PORT = process.env.PORT || 8080
-app.listen(PORT, () => {
-    console.log(`${process.env.DEV_MODE} Running on Server  ${PORT}`.bgGreen.black);
-})
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`${process.env.DEV_MODE} Running on Server  ${PORT}`.bgGreen.black);
+    })
 
+})
 
 
 // {
