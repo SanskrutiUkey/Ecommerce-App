@@ -2,77 +2,53 @@
 
 Welcome to the Ecommerce-App repository! This project serves as the backend for a comprehensive e-commerce platform, providing essential APIs and functionalities to support the frontend interface.
 
-Overview
+# Overview
 The Ecommerce-App backend is designed to handle core e-commerce operations, including:
 
-User Authentication and Authorization: Secure user registration, login, and role management.
+- User Authentication and Authorization: Secure user registration, login, and role management.
 
-Product Management: CRUD operations for products, categories, and inventory.
+- Product Management: CRUD operations for products, categories, and inventory.
 
-Order Processing: Handling of customer orders, payments, and order history.
+- Order Processing: Handling of customer orders, payments, and order history.
 
-Middleware Integration: Custom middleware for error handling, logging, and request validation.
+- Middleware Integration: Custom middleware for error handling, logging, and request validation.
 
 The corresponding frontend for this backend can be found in the Ecommerce_Frontend repository.
 
-Features
-Modular Architecture: Organized codebase with separate modules for controllers, models, routes, and middleware.
+🔧 Features
+- User authentication & authorization
 
-Scalability: Designed to accommodate future enhancements and increased load.
+- Product & inventory management
 
-Security: Implements best practices for data protection and user privacy.
+- Order processing
 
-Folder Structure
-config/: Configuration files for database connections and environment variables.
+- Modular folder structure
 
-controllers/: Handles the logic for different API endpoints.
+- Secure and scalable
 
-helpers/: Utility functions and helper methods.
+📁 Folder Structure
+- config/ – App & DB config
 
-middlewares/: Custom middleware for authentication, error handling, etc.
+- controllers/ – API logic
 
-models/: Database schemas and models.
+- models/ – MongoDB schemas
 
-routes/: API route definitions.
+- routes/ – API endpoints
 
-client/build/: Static files for the frontend application.
+- middlewares/ – Auth & error handling
 
-Getting Started
-Prerequisites
-Ensure you have the following installed:
+- client/build/ – Static frontend files
 
-Node.js
-
-MongoDB
-
-Installation
-Clone the repository:
-
-bash
-Copy
-Edit
+🚀 Getting Started
+1. Clone the repo
 git clone https://github.com/SanskrutiUkey/Ecommerce-App.git
-Navigate to the project directory:
 
-bash
-Copy
-Edit
-cd Ecommerce-App
-Install dependencies:
-
-bash
-Copy
-Edit
+2. Install dependencies
 npm install
-Set up environment variables:
 
-Create a .env file in the root directory and add the necessary environment variables as specified in config/config.js.
+3. Set up .env file
 
-Start the server:
-
-bash
-Copy
-Edit
+4. Start the server
 npm start
-The server should now be running on http://localhost:5000.
 
+Runs at: http://localhost:5000
